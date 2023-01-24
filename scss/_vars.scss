@@ -1,0 +1,41 @@
+$primary: rgb(5, 5, 5);
+$accent: #10c9c3;
+$white: white;
+$text-gray: #787a79;
+$background-color: #f5f5f5;
+
+$font-Montserrat: 'Montserrat', sans-serif;
+$font-Nunito: 'Nunito Sans', sans-serif;
+
+@mixin title {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: $font-Montserrat;
+}
+
+@mixin text {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $font-Nunito;
+    color: $text-gray;
+}
+
+@mixin button {
+    color: $white;
+    text-transform: uppercase;
+    background-color: $accent;
+    padding: 22px 34px;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.title {
+    @include title;
+}
+
+.text {
+    @include text;
+}
